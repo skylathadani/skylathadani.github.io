@@ -405,7 +405,7 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(totalItems).toFixed(2)));
+	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(totalItems).toFixed(2)));
 	
 		
 }

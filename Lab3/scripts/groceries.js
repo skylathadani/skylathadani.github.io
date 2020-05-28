@@ -14,7 +14,7 @@ var products = [
 		img: "https://kukulhufihaara.com/wp-content/uploads/2020/05/Broccoli.png"
 	},
 	{
-		name: "organic brocoli",
+		name: "organic broccoli",
 		category: "veg",
 		vegetarian: true,
 		glutenFree: true,
