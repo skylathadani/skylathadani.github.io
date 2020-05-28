@@ -1,5 +1,7 @@
 // Array of products, each product is an object with different fieldset
-// A set of ingredients should be added to products		 
+// A set of ingredients should be added to products	
+
+
 
 var products = [
 	{
@@ -8,7 +10,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "organic brocoli",
@@ -16,7 +19,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 2.99,
-		organic: true
+		organic: true,
+		
 		
 	},
 	{
@@ -25,7 +29,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.35,
-		organic: false
+		organic: false,
+		
 		
 	},
 	{
@@ -34,7 +39,8 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.55,
-		organic: false
+		organic: false,
+		
 		
 	},
 	{
@@ -43,7 +49,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 4.49,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "vanilla yogurt",
@@ -51,7 +58,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 3.99,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "chedder cheese",
@@ -59,7 +67,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 5.89,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "mini cucumber",
@@ -67,7 +76,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 6.49,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "organic mini cucumber",
@@ -75,7 +85,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 7.49,
-		organic: true
+		organic: true,
+		
 	},
 	{
 		name: "bell pepper",
@@ -83,7 +94,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 2.38,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "organic bell pepper",
@@ -91,7 +103,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 3.38,
-		organic: true
+		organic: true,
+		
 	},
 	{
 		name: "strawberries",
@@ -99,7 +112,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 3.99,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "organic strawberries",
@@ -107,7 +121,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 4.99,
-		organic: true
+		organic: true,
+		
 	},
 	{
 		name: "bananas",
@@ -115,7 +130,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.26,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "organic bananas",
@@ -123,7 +139,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 2.26,
-		organic: true
+		organic: true,
+		
 	},
 	{
 		name: "chicken thighs",
@@ -131,7 +148,8 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 7.35,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "ground beef",
@@ -139,7 +157,8 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 7.99,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "tortillas",
@@ -147,7 +166,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.99,
-		organic: false
+		organic: false,
+		
 	},
 	{
 		name: "croissants",
@@ -155,7 +175,8 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		price: 3.99,
-		organic: false
+		organic: false,
+		
 	}
 ];
 	
@@ -176,7 +197,7 @@ function restrictListProducts(prods, restriction) {
 			//product_names.push(prods[i].price);
 		}
 		else if (restriction == "None"){
-			product_names.push({name: prods[i].name,price: prods[i].price});
+			product_names.push({name: prods[i].name,price: prods[i].price,img:prods[i].img});
 			//product_names.push(prods[i].price);
 		}else if ((restriction == "VegGluten") && (prods[i].glutenFree == true) && (prods[i].vegetarian == true)){
 			product_names.push({name: prods[i].name,price: prods[i].price});
@@ -198,6 +219,14 @@ function restrictListProducts(prods, restriction) {
 				product_names.push({name: prods[i].name,price: prods[i].price});
 			}
 		}else if((restriction == "VegGlutOrg") && (prods[i].glutenFree == true) && (prods[i].vegetarian == true)){
+			if(prods[i].category == "veg"){
+				if(prods[i].organic == true){
+					product_names.push({name: prods[i].name,price: prods[i].price});
+				}
+			}else{
+				product_names.push({name: prods[i].name,price: prods[i].price});
+			}
+		}else if (restriction == "Organic"){
 			if(prods[i].category == "veg"){
 				if(prods[i].organic == true){
 					product_names.push({name: prods[i].name,price: prods[i].price});
