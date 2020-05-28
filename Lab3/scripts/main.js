@@ -94,16 +94,7 @@ function populateVeggies(slct1, slct2) {
 		 
 	}
 
-		var para = document.createElement("P");
-		para.innerHTML = "Current Cart : ";
-		para.appendChild(document.createElement("br"));  
-
-		for(var y = 0; y < totalItems.length; y++){
-			para.appendChild(document.createTextNode(totalItems[y]));
-			para.appendChild(document.createElement("br"));
-		} 
-
-		s2.appendChild(para);
+		
 }
 
 function populateGrains(slct1, slct2) {
@@ -157,16 +148,7 @@ function populateGrains(slct1, slct2) {
 
 	//s2.appendChild(document.createElement("br"));  
 
-		var para = document.createElement("P");
-		para.innerHTML = "Current Cart : ";
-		para.appendChild(document.createElement("br"));  
-
-		for(var y = 0; y < totalItems.length; y++){
-			para.appendChild(document.createTextNode(totalItems[y]));
-			para.appendChild(document.createElement("br"));
-		} 
-
-		s2.appendChild(para);
+		
 
 
 }
@@ -223,16 +205,7 @@ function populateMeat(slct1, slct2) {
 
 	//s2.appendChild(document.createElement("br"));  
 
-		var para = document.createElement("P");
-		para.innerHTML = "Current Cart : ";
-		para.appendChild(document.createElement("br"));  
-
-		for(var y = 0; y < totalItems.length; y++){
-			para.appendChild(document.createTextNode(totalItems[y]));
-			para.appendChild(document.createElement("br"));
-		} 
-
-		s2.appendChild(para);
+		
 
 
 }
@@ -288,17 +261,7 @@ function populateDairy(slct1, slct2) {
 
 	//s2.appendChild(document.createElement("br"));  
 
-		var para = document.createElement("P");
-		para.innerHTML = "Current Cart : ";
-		para.appendChild(document.createElement("br"));  
-
-		for(var y = 0; y < totalItems.length; y++){
-			para.appendChild(document.createTextNode(totalItems[y]));
-			para.appendChild(document.createElement("br"));
-		} 
-
-		s2.appendChild(para);
-
+		
 
 }
 
