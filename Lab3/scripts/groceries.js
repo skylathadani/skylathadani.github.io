@@ -222,23 +222,24 @@ function generateRestrictions(){
 	// }
 
 
-	if(chosenRestrict.includes("Vegetarian","gluten","Organic")){
+	if(chosenRestrict.includes("Vegetarian") && chosenRestrict.includes("gluten") && chosenRestrict.includes("Organic")){
 		return "VegGlutOrg";
-	}else if(chosenRestrict.includes("Vegetarian","gluten")){
+	}else if(chosenRestrict.includes("Vegetarian") && (chosenRestrict.includes("gluten")) && !(chosenRestrict.includes("Organic"))){
 		return "VegGluten";
-	}else if(chosenRestrict.includes("Vegetarian","Organic")){
+	}else if(chosenRestrict.includes("Vegetarian") && chosenRestrict.includes("Organic") && !(chosenRestrict.includes("gluten"))){
 		return "VegOrg";
-	}else if(chosenRestrict.includes("gluten","Organic")){
+	}else if(chosenRestrict.includes("gluten") && (chosenRestrict.includes("Organic")) && !(chosenRestrict.includes("Vegetarian"))){
 		return "GlutOrg";
-	}else if(chosenRestrict.includes("Vegetarian")){
+	}else if(chosenRestrict.includes("Vegetarian") && !(chosenRestrict.includes("Organic")) && !(chosenRestrict.includes("gluten"))){
 		return "Vegetarian";
-	}else if (chosenRestrict.includes("gluten")){
+	}else if (chosenRestrict.includes("gluten") && !(chosenRestrict.includes("Vegetarian")) && !(chosenRestrict.includes("Organic"))){
 		return "GlutenFree";
-	}else if (chosenRestrict.includes("Organic")){
+	}else if (chosenRestrict.includes("Organic") && !(chosenRestrict.includes("Vegetarian")) && !(chosenRestrict.includes("gluten"))){
 		return "Organic";
 	}else{
 		return "None";
 	}
+
 
 
 }
