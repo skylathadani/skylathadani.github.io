@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hair Salon</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><img src="hair-salon.png">Nice Scissors</h1>
+
+
+    <p class="lead"><img class="icons" src="pin.png"> 300 Scissor Way, Ottawa ON, K1N7I8 <img class = "icons" src="email.png"> nice@scissors.com <img class="icons" src="phone-ringing.png"> 613-000-1234</p>
+  </div>
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+  </ol>
+  <div class="services">
+	<h1>Services Offered</h1>
+</div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="womens_cut.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hair Cuts</h5>
+        <p>Our stylists are able to offer a quality cut and a pre-cut consultation to help you find your perfect style</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="mens_cut.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hair Cuts</h5>
+        <p>Our stylists are able to offer a quality cut and a pre-cut consultation to help you find your perfect style</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Wedding_updo.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Specialty</h5>
+        <p>More than just haircuts, we offer hair treatments, wedding updos and perms to give your style a lift</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="colour.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Colouring</h5>
+        <p>Find your perfect shade with all over colour, highlights or foils</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="highlights.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Colouring</h5>
+        <p>Find your perfect shade with all over colour, highlights or foils</p>
+      </div>
+    </div>
+      <div class="carousel-item">
+      <img src="perm.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Specialy</h5>
+        <p>More than just haircuts, we offer hair treatments, wedding updos and perms to give your style a lift</p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="long.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hair Styles!</h5>
+        <p>Keep your hair long</p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="medium.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hair Styles!</h5>
+        <p>Discover your perfect medium length</p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="short.jpg" class="d-block w-100" alt="..." width="20" height="20">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Hair Styles!</h5>
+        <p>Make it short!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Service</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Womens Cut</th>
+      <td>$15</td>
+      <
+ 
+    </tr>
+    <tr>
+      <th scope="row">Mens Cut</th>
+      <td>$15</td>
+    
+     
+    </tr>
+    <tr>
+      <th scope="row">Kids Cut</th>
+      <td>$10</td>  
+    </tr>
+    <tr>
+      <th scope="row">All-over Colour</th>
+      <td>$30</td>  
+    </tr>
+    <tr>
+      <th scope="row">Highlights</th>
+      <td>$50</td>  
+    </tr>
+    <tr>
+      <th scope="row">Foils</th>
+      <td>$50</td>  
+    </tr>
+    <tr>
+      <th scope="row">Hair Treatments</th>
+      <td>$20</td>  
+    </tr>
+    <tr>
+      <th scope="row">Wedding Updo</th>
+      <td>$30</td>  
+    </tr>
+    <tr>
+      <th scope="row">Perm</th>
+      <td>$50</td>  
+    </tr>
+  </tbody>
+</table>
+
+<div class="container p-3">
+        <h2>Meet our hairdressers</h2>
+        <div class="card-columns">
+            <div class="card " style="width:200px">
+                <img class="card-img-top" src="p1.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title">Jules</h4>
+                    <p class="card-text">The curly hair specialist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Jules has been cutting hair for 10 years and perfecting the art of the curl </p>
+                    </div>
+                </div>
+            </div>
+          
+             <div class="card " style="width:200px">
+                <img class="card-img-top" src="p3.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title">Kevin</h4>
+                    <p class="card-text">The short hair specialist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Kevin has been cutting hair for 8 years and specializes in short hair styles </p>
+                    </div>
+                </div>
+            </div>
+              <div class="card " style="width:200px">
+                <img class="card-img-top" src="p6.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title">Lily</h4>
+                    <p class="card-text">The treatment mixer</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Jules has been cutting hair for 4 years and is our in-house hair treatment mixer </p>
+                    </div>
+                </div>
+            </div>
+             <div class="card " style="width:200px">
+                <img class="card-img-top" src="p4.jpg" alt="Card image" style="width:100%; height:200px; ">
+                <div class="card-body">
+                    <h4 class="card-title">Anne</h4>
+                    <p class="card-text">The updo and highlight specialist</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Anne has been cutting hair for 5 years and is known for her wedding styles </p>
+                    </div>
+                </div>
+            </div>
+             <div class="card " style="width:200px">
+                <img class="card-img-top" src="p5.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title">Peter</h4>
+                    <p class="card-text">The style expert</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Peter has been cutting hair for 3 years and creates hair style art</p>
+                    </div>
+                </div>
+            </div>
+               <div class="card " style="width:200px">
+                <img class="card-img-top" src="p2.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title">Sydney</h4>
+                    <p class="card-text">The colour wizard</p>
+                    <!-- collapsible part -->
+                    <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                    <div id="profile" class="collapse p-3">
+                        <p>Sydney has been cutting hair for 7 years and is our colour master </p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+     <div class="container">
+        <h1>Book an Appointment Today!</h1>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Here is our list of services</p>
+                        <div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Womens Cut
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Mens Cut
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Kids Cut
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						All-Over Colour
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Highlights
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Foils
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Hair Treatments
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Wedding Updo
+  							</label>
+						</div>
+						<div class="form-check">
+  							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  							<label class="form-check-label" for="defaultCheck1">
+    						Perm
+  							</label>
+						</div>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Phone number</label>
+    <input type="phone" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<br>
+<br>
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+Images from <a href="https://www.pexels.com/search">pexels</a> and <a href="https://unsplash.com/s/photos/"> unsplash</a>
+<br>
+<br>
+<footer>Created by Skyla Thadani</footer>
+</html>
