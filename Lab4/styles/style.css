@@ -10,10 +10,10 @@ h1 {
 
   
 }
-.jumbotron-fluid{
+.jumbotron{
 	background-color: white;
 	font-size: 30px;
-	margin: 0px;
+	
 	
 }
 
@@ -40,7 +40,7 @@ img{
 .carousel.slide{
 	height: 700px;
 	width: 1000px;
-	margin-left: 280px;
+	
 	
 	
 }
