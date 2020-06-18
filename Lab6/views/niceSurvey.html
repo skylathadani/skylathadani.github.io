@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Questionaire</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body style="background-color:white;margin: 1.5%;">
+	<div class="jumbotron" style="height: 800px;">
+  <h1 class="display-4">Lets Make Music</h1>
+  <p class="lead">Explore Patatap</p>
+  <hr class="my-4">
+  <p>Click on the images below to access the Patatap website and fill out the survey about your experience!</p>
+  <div class="images">
+		<a href="https://www.patatap.com/">
+			<img src="p1.png">
+			<img src="p2.gif"> 
+			<img src="p3.jpg"> 
+			<img src="p4.jpg">
+			<img src="p5.png"> 
+			<img src="p6.png"> 
+		</a>	
+	</div>
+
+ 
+</div>
+	
+
+
+
+	</br>
+	</br>
+
+	<div>
+
+		<form >
+		
+		
+		<div class="jumbotron">
+
+
+		<h1>Questions</h1>
+		<br>
+		<br>
+
+		<h3>Would you recommend this website to a friend?</h3>
+		<input type="radio" name="recommend" value="yes"><label>Yes</label><br>
+		<input type="radio" name="recommend" value="no"><label>No</label><br>
+		<br>
+
+		<h3>What were you able to do on the site? Check all that apply</h3>
+		<input type="checkbox" name="action" value="music"><label>I was able to hear music</label> <br>
+		<input type="checkbox" name="action" value="animations"><label>I was able to see animations</label> <br>
+		<input type="checkbox" name="action" value="key"><label>Each key I pressed produced a unique sound and animation</label> <br>
+		<input type="checkbox" name="action" value="multi"><label>I could press multiple keys at once</label> <br>
+		<input type="checkbox" name="action" value="other"><label>Other</label> <br>
+		<br>
+
+		<h3>If you selected "other" please specify other functionality you were able to do:</h3>
+		<input type="text" name="other" />
+		
+		<br>
+		<br>
+
+		<h3>What was your favourite feature?</h3>
+		<select name="favourite">
+			<option value="Sounds" selected="Sounds">Sounds</option>
+			<option value="Animation">Animation</option>
+			<option value="Colours">Colours</option>
+		</select>
+		<br>
+		<br>
+		<h3>If there is a feature that you would change, what would it be?</h3>
+		<input type="text" name="feature">
+		<br>
+		<br>
+		<h3>I found Patatap easy to use</h3>
+		
+		<label>Strongly Disagree</label><input name="ease" type="range" list="tickmarks" min="0" max="9" style="color: black;"><label>Strongly Agree</label>
+		<datalist id="tickmarks">
+			<option value="0" label="0"></option>
+			<option value="1" label="1"></option>
+			<option value="2" label="2"></option>
+			<option value="3" label="3"></option>
+			<option value="4" label="4"></option>
+			<option value="5" label="5"></option>
+			<option value="6" label="6"></option>
+			<option value="7" label="7"></option>
+			<option value="8" label="8"></option>
+			<option value="9" label="9"></option>
+			<option value="6" label="10"></option>
+
+		</datalist>
+		<br>
+		<br>
+
+		<h3>Do you have any additional comments?</h3>
+		<input type="text" name="comments">
+<br>
+		<br>
+		<button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+		</div>
+		
+
+		
+	</form>
+	</div>
+
+	<footer>
+  <p class="signature"> Website designed by: Skyla Thadani </p><br>
+</footer>
+
+<script src="/assets/action.js"></script>
+
+</body>
+</html>

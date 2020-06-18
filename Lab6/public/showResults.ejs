@@ -1,0 +1,51 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Recommed</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].recommend %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>action</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].action %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Other</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].other %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Favourite</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].favourite %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Feature Change</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].feature %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Ease</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].ease %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Comments</h2>
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].comments %> :  <%= results[6][i].count %></li>
+    <% } %>    
+    </ul>
+</body>
+</html>

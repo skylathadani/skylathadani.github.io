@@ -1,0 +1,57 @@
+img{
+	width: 30%;
+	height: 200px;
+
+	float: left;
+	margin: 1.5%;
+}
+p{
+	font-family: Raleway;
+	
+	font-size: 23px;
+	font-weight: 800;
+	
+	padding-bottom: 20px;
+
+
+
+}
+h1{
+	font-family: Raleway;
+	
+	
+	font-weight: 800;
+	text-transform: uppercase;
+
+
+	
+}
+h3{
+	font-family: Raleway;
+	
+	
+	font-weight: 800;
+	
+	
+
+	}
+h2{
+	font-family: Raleway;
+	
+	
+	font-weight: 800;
+}
+
+.signature{
+	font-family: Raleway;
+	
+	font-size: 10px;
+	font-weight: 800;
+	
+	padding-bottom: 0px;
+}
+
+.Questions{
+	margin: 1.5%;
+	
+}
