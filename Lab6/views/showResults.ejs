@@ -5,43 +5,43 @@
 
 <body>
     <h1>Survey analysis</h1>
-    <h2>Recommed</h2>
+    <h2>Would you Recommend this site?</h2>
     <ul>
     <% for (var i=0; i<results[0].length; i++){ %>
         <li><%= results[0][i].recommend %> :  <%= results[0][i].count %></li>
     <% } %>    
     </ul>
-    <h2>action</h2>
+    <h2>What Actions could you do?</h2>
     <ul>
     <% for (var i=0; i<results[1].length; i++){ %>
         <li><%= results[1][i].action %> :  <%= results[1][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Other</h2>
+    <h2>Alternative Actions</h2>
     <ul>
     <% for (var i=0; i<results[2].length; i++){ %>
         <li><%= results[2][i].other %> :  <%= results[2][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Favourite</h2>
+    <h2>Favourite Features</h2>
     <ul>
     <% for (var i=0; i<results[3].length; i++){ %>
         <li><%= results[3][i].favourite %> :  <%= results[3][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Feature Change</h2>
+    <h2>Is there a Feature you would change?</h2>
     <ul>
     <% for (var i=0; i<results[4].length; i++){ %>
         <li><%= results[4][i].feature %> :  <%= results[4][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Ease</h2>
+    <h2>How Easy is this site to use? (0-10)</h2>
     <ul>
     <% for (var i=0; i<results[5].length; i++){ %>
         <li><%= results[5][i].ease %> :  <%= results[5][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Comments</h2>
+    <h2>Additional Comments</h2>
     <ul>
     <% for (var i=0; i<results[6].length; i++){ %>
         <li><%= results[6][i].comments %> :  <%= results[6][i].count %></li>
